@@ -1,8 +1,21 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
-
-First, run the development server:
+### If you are using Node 17+:
+> Update the package.json file to use a legacy openssl format.
+> Replace:
+```
+"dev": "next dev",
+```
+> with:
+```
+"dev": "set NODE_OPTIONS=--openssl-legacy-provider && next dev",
+```
+Update the Node Module:
+```
+npm install
+```
+Run the development server:
 
 ```bash
 npm run dev
