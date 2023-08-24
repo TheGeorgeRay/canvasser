@@ -2,15 +2,27 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 ### If you are using Node 17+:
-> Update the package.json file to use a legacy openssl format.
-> Replace:
-```
-"dev": "next dev",
-```
-> with:
-```
-"dev": "set NODE_OPTIONS=--openssl-legacy-provider && next dev",
-```
+> #### Windows:
+>> Update the package.json file to use a legacy openssl format.
+>> Replace:
+>> ```
+>> "dev": "next dev",
+>> ```
+>> with:
+>> ```
+>> "dev": "set NODE_OPTIONS=--openssl-legacy-provider && next dev",
+>> ```
+> #### Linux:
+>> Update the package.json file to use a legacy openssl format.
+>> Replace:
+>> ```
+>> "dev": "next dev",
+>> ```
+>> with:
+>> ```
+>> "dev": "export NODE_OPTIONS=--openssl-legacy-provider && next dev",
+>> ```
+
 Update the Node Module:
 ```
 npm install
